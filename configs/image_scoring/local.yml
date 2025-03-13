@@ -1,6 +1,6 @@
 task: image_regression
 base_model: google/vit-base-patch16-224
-project_name: autotrain-image-regression-model
+project_name: neural-forge-ai-image-regression-model
 log: tensorboard
 backend: local
 

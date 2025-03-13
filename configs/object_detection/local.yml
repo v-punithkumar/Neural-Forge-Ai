@@ -1,6 +1,6 @@
 task: object_detection
 base_model: facebook/detr-resnet-50
-project_name: autotrain-obj-det-local-dataset
+project_name: neural-forge-ai-obj-det-local-dataset
 log: tensorboard
 backend: local
 

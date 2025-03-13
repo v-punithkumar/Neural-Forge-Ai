@@ -1,6 +1,6 @@
 task: extractive-qa
 base_model: google-bert/bert-base-uncased
-project_name: autotrain-bert-ex-qa2
+project_name: neural-forge-ai-bert-ex-qa2
 log: tensorboard
 backend: local
 

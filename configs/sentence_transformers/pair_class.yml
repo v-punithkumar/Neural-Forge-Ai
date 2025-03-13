@@ -1,6 +1,6 @@
 task: sentence-transformers:pair_class
 base_model: google-bert/bert-base-uncased
-project_name: autotrain-st-pair-class
+project_name: neural-forge-ai-st-pair-class
 log: tensorboard
 backend: local
 

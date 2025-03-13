@@ -1,29 +1,31 @@
 # Understanding Column Mapping
 
-Column mapping is a critical setup process in AutoTrain that informs the system 
+Column mapping is a critical setup process in **Neural-Forge-Ai** that informs the system 
 about the roles of different columns in your dataset. Whether it's a tabular 
-dataset, text classification data, or another type, the need for precise 
-column mapping ensures that AutoTrain processes each dataset element correctly.
+dataset, text classification data, or another type, precise column mapping ensures that 
+**Neural-Forge-Ai** processes each dataset element correctly.
 
 ## How Column Mapping Works
 
-AutoTrain has no way of knowing what the columns in your dataset represent. 
-AutoTrain requires a clear understanding of each column's function within 
-your dataset to train models effectively. This is managed through a 
-straightforward mapping system in the user interface, represented as a dictionary. 
-Here's a typical example:
+**Neural-Forge-Ai** does not inherently understand what each column in your dataset represents. 
+To train models effectively, you must provide a mapping between your dataset columns and 
+the expected inputs for the model.
+
+This is managed through a straightforward dictionary-based mapping system.  
+Here's a basic example:
 
 ```
 {"text": "text", "label": "target"}
 ```
 
-In this example, the `text` column in your dataset corresponds to the text data 
-AutoTrain uses for processing, and the `target` column is treated as the 
-label for training.
+In this example:
 
-But let's not get confused! AutoTrain has a way to understand what each column in your dataset represents.
-If your data is already in AutoTrain format, you dont need to change column mappings.
-If not, you can easily map the columns in your dataset to the correct AutoTrain format.
+text → The column containing the text data.
+label → The column used as the target for training.
+
+But let's not get confused! **Neural-Forge-Ai** has a way to understand what each column in your dataset represents.
+If your data is already in **Neural-Forge-Ai** format, you dont need to change column mappings.
+If not, you can easily map the columns in your dataset to the correct **Neural-Forge-Ai** format.
 
 In the UI, you will see column mapping as a dictionary:
 
@@ -31,8 +33,8 @@ In the UI, you will see column mapping as a dictionary:
 {"text": "text", "label": "target"}
 ```
 
-Here, the column `text` in your dataset is mapped to the AutoTrain column `text`, 
-and the column `target` in your dataset is mapped to the AutoTrain column `label`.
+Here, the column `text` in your dataset is mapped to the **Neural-Forge-Ai** column `text`, 
+and the column `target` in your dataset is mapped to the **Neural-Forge-Ai** column `label`.
 
 Let's say you are training a text classification model and your dataset has the following columns:
 
@@ -42,7 +44,7 @@ full_text, target_sentiment
 "this movie is bad", negative
 ```
 
-You can map these columns to the AutoTrain format as follows:
+You can map these columns to the **Neural-Forge-Ai** format as follows:
 
 ```
 {"text": "full_text", "label": "target_sentiment"}
@@ -200,6 +202,6 @@ To ensure your model trains correctly:
 - Update Mappings for New Datasets: Each new dataset might require its unique mappings based on its structure and the task at hand.
 
 By following these guidelines and using the provided examples as templates, 
-you can effectively instruct AutoTrain on how to interpret and handle your 
+you can effectively instruct **Neural-Forge-Ai** on how to interpret and handle your 
 data for various machine learning tasks. This process is fundamental for 
 achieving optimal results from your model training endeavors.

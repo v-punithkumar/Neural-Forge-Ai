@@ -1,78 +1,97 @@
-# Quickstart Guide to AutoTrain on Hugging Face Spaces
+# 🚀 Quickstart Guide to Neural-Forge-Ai on Hugging Face Spaces  
 
-AutoTrain on Hugging Face Spaces is the preferred choice for a streamlined experience in 
-model training. This platform is optimized for ease of use, with pre-installed dependencies 
-and managed hardware resources. AutoTrain on Hugging Face Spaces can be used both by 
-no-code users and developers, making it versatile for various levels of expertise.
+**Neural-Forge-Ai** on Hugging Face Spaces is the **preferred choice** for a **streamlined experience** in model training.  
+This platform is **optimized for ease of use**, with **pre-installed dependencies** and **managed hardware resources**.  
+It can be used by **both no-code users and developers**, making it **versatile for various levels of expertise**.  
 
+---
 
-## Creating a New AutoTrain Space
+## 🎯 Creating a New Neural-Forge-Ai Space  
 
-Getting started with AutoTrain is straightforward. Here’s how you can create your new space:
+Getting started with **Neural-Forge-Ai** is **straightforward**. Here’s how you can **create your new space**:
 
-1. **Visit the AutoTrain Page**: To create a new space with AutoTrain Docker image, all you need to do is go 
-to [AutoTrain Homepage](https://hf.co/autotrain) and click on "Create new project".
+### 1️⃣ **Visit the Neural-Forge-Ai Page**  
+To create a new space with **Neural-Forge-Ai Docker image**, visit:  
+➡️ [**Neural-Forge-Ai Homepage**](https://hf.co/neural-forge-ai) and click **"Create new project."**
 
-2. **Log In or View the Setup Screen**: If not logged in, you'll be prompted to do so. Then, you’ll see a screen similar to this:
+### 2️⃣ **Log In or View the Setup Screen**  
+If you are **not logged in**, you’ll be **prompted** to do so.  
+Then, you’ll see a screen similar to this:
 
-![autotrain-duplicate-space](https://raw.githubusercontent.com/huggingface/autotrain-advanced/main/static/duplicate_space.png)
+![neural-forge-duplicate-space](https://raw.githubusercontent.com/v-punithkumar/Neural-Forge-Ai/main/static/duplicate_space.png)
 
-3. **Set Up Your Space**:
+### 3️⃣ **Set Up Your Space**  
 
-- **Choose a Space Name**: Name your space something relevant to your project.
+- **Choose a Space Name**: Name your space something relevant to your project.  
+- **Allocate Hardware Resources**: Select the necessary computational resources based on your project needs.  
+- **Duplicate Space**: Click on **"Duplicate Space"** to initiate your **Neural-Forge-Ai** space with the Docker image.  
 
-- **Allocate Hardware Resources**: Select the necessary computational resources based on your project needs.
+### 4️⃣ **Configuration Options**  
 
-- **Duplicate Space**: Click on "Duplicate Space" to initiate your AutoTrain space with the Docker image.
+- `PAUSE_ON_FAILURE`: Set this to `0` if you prefer the space **not to pause** on training failures.  
+  - Useful for running **continuous experiments**.  
+  - If you **run multiple experiments**, this ensures they proceed **without interruption**.
 
-4. **Configuration Options**:
+---
 
-- PAUSE_ON_FAILURE: Set this to 0 if you prefer the space not to pause on training failures, useful for running continuous experiments. This option can also be used if you continuously want to perfom many experiments in the same space.
+## 🚀 **Launching & Training**  
 
-5. **Launch and Train**:
+- Once done, in **a few seconds**, the **Neural-Forge-Ai Space** will be **up and running**, and you will see this screen:
 
-- Once done, in a few seconds, the AutoTrain Space will be up and running and you will be presented with the following screen:
+![neural-forge-space](https://raw.githubusercontent.com/v-punithkumar/Neural-Forge-Ai/main/static/neural_forge_space.png)
 
-![autotrain-space](https://raw.githubusercontent.com/huggingface/autotrain-advanced/main/static/autotrain_space.png)
+- From here, you can:  
+  ✅ **Select tasks**  
+  ✅ **Upload datasets**  
+  ✅ **Choose models**  
+  ✅ **Adjust hyperparameters (if needed)**  
+  ✅ **Start training** directly within the space  
 
-- From here, you can select tasks, upload datasets, choose models, adjust hyperparameters (if needed), 
-and start the training process directly within the space.
+- The space will manage its own activity, **shutting down post-training** unless configured otherwise based on the `PAUSE_ON_FAILURE` setting.
 
-- The space will manage its own activity, shutting down post-training unless configured 
-otherwise based on the `PAUSE_ON_FAILURE` setting.
+---
 
-6. **Monitoring Progress**:
+## 📊 **Monitoring Progress**  
 
-- All training logs and progress can be monitored via TensorBoard, accessible under 
-`username/project_name` on the Hugging Face Hub.
+- **All training logs** and **progress** can be monitored via **TensorBoard**, accessible under:  
+  `username/project_name` on the Hugging Face Hub.  
+- Once **training concludes successfully**, you’ll find the **model files** in the **same repository**.
 
-- Once training concludes successfully, you’ll find the model files in the same repository.
+---
 
-7. **Navigating the UI**:
+## 🏗️ **Navigating the UI**  
 
-- If you need help understanding any UI elements, click on the small (i) information icons for detailed descriptions.
+- If you need **help understanding any UI elements**, click on the **(ℹ️) information icons** for detailed descriptions.  
+- For **data formats** and **detailed parameter information**, check the **"Data Formats & Parameters"** section.  
 
-If you are confused about the UI elements, click on the small (i) information icon to get more information about the UI element.
+---
 
-For data formats and detailed parameter information, please see the Data Formats and Parameters section where we provide 
-example datasets and detailed information about the parameters for each task supported by AutoTrain.
+## 🔄 **Ensuring Your Neural-Forge-Ai is Up-to-Date**  
 
-## Ensuring Your AutoTrain is Up-to-Date
+We are **constantly adding** new **features** and **tasks** to **Neural-Forge-Ai**.  
+To **benefit from the latest updates**, update your **Neural-Forge-Ai space regularly**:
 
-We are constantly adding new features and tasks to AutoTrain Advanced. To benefit from the latest features, tasks, and bug fixes, update your AutoTrain space regularly:
+### 🔧 **Factory Reboot**  
+Navigate to the **settings page** of your space and click:  
 
-- *Factory Reboot*: Navigate to the settings page of your space and click on "Factory reboot" to upgrade to the latest version of AutoTrain Advanced.
+➡️ **"Factory reboot"** to upgrade to the **latest version** of **Neural-Forge-Ai**.
 
-![autotrain-space-template](https://raw.githubusercontent.com/huggingface/autotrain-advanced/main/static/space_template_5.png)
+![neural-forge-space-template](https://raw.githubusercontent.com/v-punithkumar/Neural-Forge-Ai/main/static/space_template_5.png)
 
-- *Note*: Simply "restarting" the space does not update it; a factory reboot is necessary for a complete update.
+> ⚠️ **Note:** Simply **"restarting"** the space **does not update it**.  
+> A **Factory Reboot** is required for a **complete update**.
 
+---
 
-For additional details on data formats and specific parameters, refer to the 
-'Data Formats and Parameters' section where we provide example datasets and extensive 
-parameter information for each supported task by AutoTrain.
+## 📚 **Additional Resources**  
 
+For **detailed information** on:  
+✔ **Data formats**  
+✔ **Specific parameters**  
+✔ **Example datasets**  
+Check out the **"Data Formats and Parameters"** section.
 
-With these steps, you can effortlessly initiate and manage your AutoTrain projects on 
-Hugging Face Spaces, leveraging the platform's robust capabilities for your machine learning and AI 
-needs.
+---
+
+With these steps, you can **effortlessly initiate and manage your Neural-Forge-Ai projects** on **Hugging Face Spaces**.  
+Leverage the platform's **robust capabilities** for your **machine learning and AI projects.** 🚀  

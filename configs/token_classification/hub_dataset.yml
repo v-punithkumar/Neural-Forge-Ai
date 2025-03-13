@@ -1,6 +1,6 @@
 task: token_classification
 base_model: google-bert/bert-base-uncased
-project_name: autotrain-bert-conll2003-finetuned
+project_name: neural-forge-ai-bert-conll2003-finetuned
 log: tensorboard
 backend: local
 

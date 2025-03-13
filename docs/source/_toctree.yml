@@ -1,46 +1,49 @@
 - sections: 
   - local: index
-    title: 🤗 AutoTrain
+    title: 🚀 Neural-Forge-Ai
   - local: cost
-    title: How much does it cost?
+    title: Pricing and Costs
   - local: support
-    title: Get help and support
+    title: Help & Support
   - local: faq
     title: Frequently Asked Questions
   title: Getting Started
+
 - sections:
   - local: quickstart_spaces
-    title: Train on Spaces
+    title: Train on Hugging Face Spaces
   - local: quickstart_py
-    title: Python SDK
+    title: Python SDK Integration
   - local: quickstart
-    title: Train Locally
+    title: Local Training Setup
   - local: config
-    title: Config File
+    title: Configuration Guide
   title: Quickstart
+
 - sections:
   - local: tasks/llm_finetuning
-    title: LLM Finetuning
+    title: LLM Fine-tuning
   - local: tasks/text_classification_regression
-    title: Text Classification/Regression
+    title: Text Classification & Regression
   - local: tasks/extractive_qa
-    title: Extractive QA
+    title: Extractive QA Training
   - local: tasks/sentence_transformer
-    title: Sentence Transformer
+    title: Sentence Transformers
   - local: tasks/image_classification_regression
-    title: Image Classification / Regression
+    title: Image Classification & Regression
   - local: tasks/object_detection
-    title: Object Detection
+    title: Object Detection Models
   - local: tasks/seq2seq
-    title: Seq2Seq
+    title: Sequence-to-Sequence Models
   - local: tasks/token_classification
-    title: Token Classification
+    title: Token Classification & NLP Tasks
   - local: tasks/tabular
-    title: Tabular
-  title: Tasks
+    title: Tabular Data Modeling
+  title: Model Training & Tasks
+
 - sections:
   - local: col_map
-    title: Understanding Column Mapping
-  - local: autotrain_api
-    title: AutoTrain API
-  title: Miscellaneous
+    title: Column Mapping Guide
+  - local: neural_forge_api
+    title: Neural-Forge API Reference
+  title: Additional Resources

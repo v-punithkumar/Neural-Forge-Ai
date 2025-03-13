@@ -1,54 +1,63 @@
-# Quickstart Guide for Local Training
+# 🚀 Quickstart Guide for Local Training with Neural-Forge-Ai  
 
-This quickstart is for local installation and usage.
-If you want to use AutoTrain on Hugging Face Spaces, please refer to the *AutoTrain on Hugging Face Spaces* section.
+This guide is for **local installation and usage** of **Neural-Forge-Ai**.  
+If you want to use **Neural-Forge-Ai on Hugging Face Spaces**, please refer to the  
+➡️ *[Neural-Forge-Ai on Hugging Face Spaces](#)* section.  
 
-You can install AutoTrain Advanced using pip:
+---
 
-```bash
-$ pip install autotrain-advanced
-```
+## 📌 Installing Neural-Forge-Ai  
 
-It is advised to install autotrain-advanced in a virtual environment to avoid any conflicts with other packages.
-Note: AutoTrain doesn't install pytorch, torchaudio, torchvision, or any other large dependencies. You will need to install them separately.
+You can install **Neural-Forge-Ai** using pip:  
 
 ```bash
-$ conda create -n autotrain python=3.10
-$ conda activate autotrain
-$ pip install autotrain-advanced
+$ pip install neural-forge-ai
+💡 Recommended: It is advised to install neural-forge-ai in a virtual environment
+to avoid package conflicts with other dependencies.
+
+⚠ Note: Neural-Forge-Ai does not install pytorch, torchaudio, torchvision, or other large dependencies.
+You will need to install them separately.
+
+🛠️ Setting Up a Virtual Environment
+We recommend using Conda for managing dependencies efficiently:
+
+bash
+Copy
+Edit
+$ conda create -n neuralforge python=3.10
+$ conda activate neuralforge
+$ pip install neural-forge-ai
 $ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 $ conda install -c "nvidia/label/cuda-12.1.0" cuda-nvcc
 $ conda install xformers -c xformers
 $ python -m nltk.downloader punkt
-$ pip install flash-attn --no-build-isolation # if you want to use flash-attn
-$ pip install deepspeed # if you want to use deepspeed
-````
+$ pip install flash-attn --no-build-isolation  # if you want to use flash-attn
+$ pip install deepspeed  # if you want to use DeepSpeed
+🖥️ Running Neural-Forge-Ai UI (User Interface)
+To launch the Neural-Forge-Ai UI locally, use the following command:
 
-# Running AutoTrain User Interface (UI)
-
-To run the autotrain app locally, you can use the following command:
-
-```bash
+bash
+Copy
+Edit
 $ export HF_TOKEN=your_hugging_face_write_token
-$ autotrain app --host 127.0.0.1 --port 8000
-```
+$ neural-forge app --host 127.0.0.1 --port 8000
+This will start the UI on:
+➡ http://127.0.0.1:8000
 
-This will start the app on `http://127.0.0.1:8000`.
+⚡ Using Neural-Forge-Ai Command Line Interface (CLI)
+You can also use the CLI commands:
 
-
-# Using AutoTrain Command Line Interface (CLI)
-
-It is also possible to use the CLI:
-
-```bash
+bash
+Copy
+Edit
 $ export HF_TOKEN=your_hugging_face_write_token
-$ autotrain --help
-```
+$ neural-forge --help
+This will display the available CLI commands:
 
-This will show the CLI commands that can be used:
-
-```bash
-usage: autotrain <command> [<args>]
+bash
+Copy
+Edit
+usage: neural-forge <command> [<args>]
 
 positional arguments:
 {
@@ -68,25 +77,33 @@ positional arguments:
     commands
 
 options:
-  -h, --help            show this help message and exit
-  --version, -v         Display AutoTrain version
+  -h, --help            Show this help message and exit
+  --version, -v         Display Neural-Forge-Ai version
   --config CONFIG       Optional configuration file
 
-For more information about a command, run: `autotrain <command> --help`
-```
+For more information about a command, run: `neural-forge <command> --help`
+🔥 Key CLI Commands for Model Training
+For best performance, we recommend using the neural-forge --config CONFIG_FILE command for training.
 
-It is advised to use only the `autotrain --config CONFIG_FILE` command for training when using the CLI.
+Below are the main CLI commands that users will find useful:
 
-The autotrain commands that end users will be interested in are:
+Command	Description
+app	Start the Neural-Forge-Ai UI
+llm	Train a large language model (LLM)
+text-classification	Train a text classification model
+text-regression	Train a text regression model
+image-classification	Train an image classification model
+tabular	Train a tabular data model
+spacerunner	Train a custom model using SpaceRunner
+seq2seq	Train a sequence-to-sequence (Seq2Seq) model
+token-classification	Train a token classification model
+💡 Recommended Approach:
+Instead of using individual commands, we recommend using:
 
-- `app`: Start the AutoTrain UI
-- `llm`: Train a language model
-- `text-classification`: Train a text classification model
-- `text-regression`: Train a text regression model
-- `image-classification`: Train an image classification model
-- `tabular`: Train a tabular model
-- `spacerunner`: Train any custom model using SpaceRunner
-- `seq2seq`: Train a sequence-to-sequence model
-- `token-classification`: Train a token classification model
+bash
+Copy
+Edit
+neural-forge --config CONFIG_FILE
+This ensures seamless model training without requiring manual configuration of each task.
 
-Note: above commands are not required if you use preferred `autotrain --config CONFIG_FILE` command to train the models.
+🚀 Get started today with Neural-Forge-Ai and train your models effortlessly!

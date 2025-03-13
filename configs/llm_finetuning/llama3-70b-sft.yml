@@ -1,6 +1,6 @@
 task: llm-sft
 base_model: meta-llama/Meta-Llama-3-70B-Instruct
-project_name: autotrain-llama3-70b-math-v1
+project_name: neural-forge-ai-llama3-70b-math-v1
 log: tensorboard
 backend: local
 

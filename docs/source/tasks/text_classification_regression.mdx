@@ -1,6 +1,6 @@
 # Text Classification & Regression
 
-Training a text classification/regression model with AutoTrain is super-easy! Get your data ready in
+Training a text classification/regression model with **Neural-Forge-Ai** is super-easy! Get your data ready in
 proper format and then with just a few clicks, your state-of-the-art model will be ready to
 be used in production.
 
@@ -66,20 +66,20 @@ and for regression:
 ### Column Mapping / Names
 
 Your CSV dataset must have two columns: `text` and `target`.
-If your column names are different than `text` and `target`, you can map the dataset column to AutoTrain column names.
+If your column names are different than `text` and `target`, you can map the dataset column to **Neural-Forge-Ai** column names.
 
 ## Training
 
 ### Local Training
 
-To train a text classification/regression model locally, you can use the `autotrain --config config.yaml` command.
+To train a text classification/regression model locally, you can use the `**Neural-Forge-Ai** --config config.yaml` command.
 
 Here is an example of a `config.yaml` file for training a text classification model:
 
 ```yaml
 task: text_classification # or text_regression
 base_model: google-bert/bert-base-uncased
-project_name: autotrain-bert-imdb-finetuned
+project_name: **Neural-Forge-Ai**-bert-imdb-finetuned
 log: tensorboard
 backend: local
 
@@ -128,10 +128,10 @@ data:
 To train the model, run the following command:
 
 ```bash
-$ autotrain --config config.yaml
+$ **Neural-Forge-Ai** --config config.yaml
 ```
 
-You can find example config files for text classification and regression in the [here](https://github.com/huggingface/autotrain-advanced/tree/main/configs/text_classification) and [here](https://github.com/huggingface/autotrain-advanced/tree/main/configs/text_regression) respectively.
+You can find example config files for text classification and regression in the [here](https://github.com/v-punithkumar/Neural-Forge-Ai/tree/main/configs/text_classification) and [here](https://github.com/v-punithkumar/Neural-Forge-Ai/tree/main/configs/text_regression) respectively.
 
 ### Training on Hugging Face Spaces
 
@@ -139,7 +139,7 @@ The parameters for training on Hugging Face Spaces are the same as for local tra
 If you are using your own dataset, select "Local" as dataset source and upload your dataset.
 In the following screenshot, we are training a text classification model using the `google-bert/bert-base-uncased` model on the IMDB dataset.
 
-![AutoTrain Text Classification on Hugging Face Spaces](https://raw.githubusercontent.com/huggingface/autotrain-advanced/main/static/autotrain_text_classification.png)
+![**Neural-Forge-Ai** Text Classification on Hugging Face Spaces](https://raw.githubusercontent.com/v-punithkumar/Neural-Forge-Ai/main/static/**Neural-Forge-Ai**_text_classification.png)
 
 For text regression, all you need to do is select "Text Regression" as the task and everything else remains the same (except the data, of course).
 

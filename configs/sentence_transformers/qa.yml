@@ -1,6 +1,6 @@
 task: sentence-transformers:qa
 base_model: microsoft/mpnet-base
-project_name: autotrain-st-qa
+project_name: neural-forge-ai-st-qa
 log: tensorboard
 backend: local
 

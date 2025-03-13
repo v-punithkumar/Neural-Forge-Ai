@@ -1,6 +1,6 @@
 task: llm-sft
 base_model: Qwen/Qwen2.5-Coder-7B-Instruct
-project_name: autotrain-qwen-finetune
+project_name: neural-forge-ai-qwen-finetune
 log: tensorboard
 backend: local
 

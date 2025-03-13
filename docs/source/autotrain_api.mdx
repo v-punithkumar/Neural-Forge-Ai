@@ -1,17 +1,17 @@
-# AutoTrain API
+# Neural-Forge-Ai API
 
-With AutoTrain API, you can run your own instance of AutoTrain and use it to 
-train models on Hugging Face Spaces infrastructure (local training coming soon). 
-This API is designed to be used with autotrain compatible models and datasets, and it provides a simple interface to
-train models with minimal configuration.
+With **Neural-Forge-Ai API**, you can run your own instance of **Neural-Forge-Ai** and leverage it to 
+train models on Hugging Face Spaces infrastructure (local training support coming soon). 
+This API is designed to work with **Neural-Forge-Ai** compatible models and datasets, providing a 
+simple and efficient interface for training models with minimal configuration.
 
-## Getting Started
+## 🚀 Getting Started
 
-To get started with AutoTrain API, all you need to do is install `autotrain-advanced`
-as discussed in running locally section and run the autotrain app command:
+To get started with the **Neural-Forge-Ai API**, first install `neural-forge-ai` 
+as discussed in the **Running Locally** section, and then start the application using:
 
 ```bash
-$ autotrain app --port 8000 --host 127.0.0.1
+$ neural-forge app --port 8000 --host 127.0.0.1
 ```
 
 You can then access the API reference at `http://127.0.0.1:8000/docs`.
@@ -23,8 +23,8 @@ curl -X POST "http://127.0.0.1:8000/api/create_project" \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer hf_XXXXX" \
      -d '{
-           "username": "abhishek",
-           "project_name": "my-autotrain-api-model",
+           "username": "punith",
+           "project_name": "my-neural-forge-ai-model",
            "task": "llm:orpo",
            "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
            "hub_dataset": "argilla/distilabel-capybara-dpo-7k-binarized",

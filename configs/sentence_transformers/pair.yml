@@ -1,6 +1,6 @@
 task: sentence-transformers:pair
 base_model: microsoft/mpnet-base
-project_name: autotrain-st-pair
+project_name: neural-forge-ai-st-pair
 log: tensorboard
 backend: local
 

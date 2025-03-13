@@ -1,6 +1,6 @@
 task: image_regression
 base_model: google/vit-base-patch16-224
-project_name: autotrain-cats-vs-dogs-finetuned
+project_name: neural-forge-ai-cats-vs-dogs-finetuned
 log: tensorboard
 backend: local
 

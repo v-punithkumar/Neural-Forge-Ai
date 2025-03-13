@@ -1,2 +1,2 @@
-recursive-include src/autotrain/static *
-recursive-include src/autotrain/templates *
+recursive-include src/neural_forge_ai/static *
+recursive-include src/neural_forge_ai/templates *

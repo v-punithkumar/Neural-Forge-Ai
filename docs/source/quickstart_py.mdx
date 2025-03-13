@@ -1,27 +1,25 @@
-# Quickstart with Python
+# 🚀 Quickstart with Python  
 
-AutoTrain is a library that allows you to train state of the art models on Hugging Face Spaces, or locally. 
-It provides a simple and easy-to-use interface to train models for various tasks like llm finetuning, text classification, 
-image classification, object detection, and more.
+**Neural-Forge-Ai** is an advanced AI training framework designed to **simplify model finetuning** across various domains, including **LLM finetuning, text classification, image classification, object detection, and more.** It offers a **user-friendly interface** to train models **locally** or on **Hugging Face Spaces.**  
 
-In this quickstart guide, we will show you how to train a model using AutoTrain in Python.
+This guide provides a **quick and easy** way to **train a model using Neural-Forge-Ai in Python.**  
 
-## Getting Started
+---
 
-AutoTrain can be installed using pip:
+## 📌 Getting Started  
+
+Neural-Forge-Ai can be installed via pip:  
 
 ```bash
-$ pip install autotrain-advanced
-```
+pip install neural-forge-ai
+The following example demonstrates how to finetune an LLM model using Neural-Forge-Ai in Python:
 
-The example code below shows how to finetune an LLM model using AutoTrain in Python:
-
-```python
+python
+Copy
+Edit
 import os
-
-from autotrain.params import LLMTrainingParams
-from autotrain.project import AutoTrainProject
-
+from neural_forge_ai.params import LLMTrainingParams
+from neural_forge_ai.project import NeuralForgeProject
 
 params = LLMTrainingParams(
     model="meta-llama/Llama-3.2-1B-Instruct",
@@ -42,69 +40,65 @@ params = LLMTrainingParams(
     gradient_accumulation=8,
     mixed_precision="bf16",
     merge_adapter=True,
-    project_name="autotrain-llama32-1b-finetune",
+    project_name="neural-forge-llama32-1b-finetune",
     log="tensorboard",
     push_to_hub=True,
     username=os.environ.get("HF_USERNAME"),
     token=os.environ.get("HF_TOKEN"),
 )
 
-
 backend = "local"
-project = AutoTrainProject(params=params, backend=backend, process=True)
+project = NeuralForgeProject(params=params, backend=backend, process=True)
 project.create()
-```
+🔹 Explanation:
+We finetune the meta-llama/Llama-3.2-1B-Instruct model on the HuggingFaceH4/no_robots dataset.
+The model is trained for 3 epochs with a batch size of 1 and learning rate of 1e-5.
+Optimizer: paged_adamw_8bit | Scheduler: cosine
+Gradient Accumulation: 8 | Mixed Precision: bf16
+The final trained model will be pushed to Hugging Face Hub after training.
+🔥 Running the Training
+To start the training, run:
 
-In this example, we are finetuning the `meta-llama/Llama-3.2-1B-Instruct` model on the `HuggingFaceH4/no_robots` dataset.
-We are training the model for 3 epochs with a batch size of 1 and a learning rate of `1e-5`.
-We are using the `paged_adamw_8bit` optimizer and the `cosine` scheduler.
-We are also using mixed precision training with a gradient accumulation of 8.
-The final model will be pushed to the Hugging Face Hub after training.
+bash
+Copy
+Edit
+export HF_USERNAME=<your-hf-username>
+export HF_TOKEN=<your-hf-write-token>
+python train.py
+This will: ✔ Create a new project directory neural-forge-llama32-1b-finetune
+✔ Initiate training using Neural-Forge-Ai
+✔ Push the final trained model to Hugging Face Hub
 
-To train the model, run the following command:
+📝 NOTE:
+Your HF_TOKEN and HF_USERNAME are required only if you:
 
-```bash
-$ export HF_USERNAME=<your-hf-username>
-$ export HF_TOKEN=<your-hf-write-token>
-$ python train.py
-```
+Want to push the trained model to the Hugging Face Hub.
+Are using a gated model or dataset.
+📜 NeuralForgeProject Class
+[[nuraldoc]] project.NeuralForgeProject
 
-This will create a new project directory with the name `autotrain-llama32-1b-finetune` and start the training process.
-Once the training is complete, the model will be pushed to the Hugging Face Hub.
+⚙️ Parameters
+📝 Text-Based Tasks
+[[nuraldoc]] trainers.clm.params.LLMTrainingParams
+[[nuraldoc]] trainers.sent_transformers.params.SentenceTransformersParams
+[[nuraldoc]] trainers.seq2seq.params.Seq2SeqParams
+[[nuraldoc]] trainers.token_classification.params.TokenClassificationParams
+[[nuraldoc]] trainers.extractive_question_answering.params.ExtractiveQuestionAnsweringParams
+[[nuraldoc]] trainers.text_classification.params.TextClassificationParams
+[[nuraldoc]] trainers.text_regression.params.TextRegressionParams
 
-Your HF_TOKEN and HF_USERNAME are only required if you want to push the model or if you are accessing a gated model or dataset.
+🖼️ Image-Based Tasks
+[[nuraldoc]] trainers.image_classification.params.ImageClassificationParams
+[[nuraldoc]] trainers.image_regression.params.ImageRegressionParams
+[[nuraldoc]] trainers.object_detection.params.ObjectDetectionParams
 
-## AutoTrainProject Class
+📊 Tabular-Based Tasks
+[[nuraldoc]] trainers.tabular.params.TabularParams
 
-[[autodoc]] project.AutoTrainProject
-
-## Parameters
-
-### Text Tasks
-
-[[autodoc]] trainers.clm.params.LLMTrainingParams
-
-[[autodoc]] trainers.sent_transformers.params.SentenceTransformersParams
-
-[[autodoc]] trainers.seq2seq.params.Seq2SeqParams
-
-[[autodoc]] trainers.token_classification.params.TokenClassificationParams
-
-[[autodoc]] trainers.extractive_question_answering.params.ExtractiveQuestionAnsweringParams
-
-[[autodoc]] trainers.text_classification.params.TextClassificationParams
-
-[[autodoc]] trainers.text_regression.params.TextRegressionParams
-
-### Image Tasks
-
-[[autodoc]] trainers.image_classification.params.ImageClassificationParams
-
-[[autodoc]] trainers.image_regression.params.ImageRegressionParams
-
-[[autodoc]] trainers.object_detection.params.ObjectDetectionParams
-
-
-### Tabular Tasks
-
-[[autodoc]] trainers.tabular.params.TabularParams
+✅ Why Neural-Forge-Ai?
+No-Code & Low-Code AI Training – Use UI-based workflow or Python API.
+Multi-Domain Support – LLMs, Text, Images, Object Detection, and more!
+Optimized for GPUs – Faster finetuning & model deployment.
+Cloud & Local Training – Flexibility to train anywhere.
+Seamless Hugging Face Integration – Push models with a single command.
+🚀 Get started with Neural-Forge-Ai and unlock the power of AI today!

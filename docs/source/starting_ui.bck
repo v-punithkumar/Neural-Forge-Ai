@@ -1,54 +1,62 @@
-# Starting the UI
+# 🚀 Starting the Neural-Forge-Ai UI  
 
-The AutoTrain UI can be started in multiple ways depending on your needs.
-We offer UI on Hugging Face Spaces, Colab and locally!
+The **Neural-Forge-Ai** UI can be started in multiple ways depending on your needs.  
+We offer UI support on **Hugging Face Spaces, Colab, and Local Installation!**  
 
-## Hugging Face Spaces
+---
 
-To start the UI on Hugging Face Spaces, you can simply click on the following link:
+## 🌍 Hugging Face Spaces  
 
-[![Deploy on Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/deploy-on-spaces-md.svg)](https://huggingface.co/login?next=/spaces/autotrain-projects/autotrain-advanced?duplicate=true)
+To start the UI on **Hugging Face Spaces**, click the following link:  
 
-Please make sure you keep the space private and attach appropriate hardware to the space.
-You can also read more about AutoTrain on the homepage and follow the link there to start your own training instance on
-Hugging Face Spaces. [Click here](https://huggingface.co/autotrain) to visit the homepage.
+[![Deploy on Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/deploy-on-spaces-md.svg)](https://huggingface.co/login?next=/spaces/neural-forge-ai/neural-forge?duplicate=true)  
 
-## Colab
+> **⚠ Important:**  
+> - Keep the space **private** and attach **appropriate hardware** (GPU recommended).  
+> - You can also read more about **Neural-Forge-Ai** on the homepage and follow the link there to start your own training instance on Hugging Face Spaces.  
+> - **[Click here](https://huggingface.co/neural-forge-ai)** to visit the homepage.  
 
-To start the UI on Colab, you can simply click on the following link:
+---
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/autotrain-advanced/blob/main/colabs/AutoTrain.ipynb)
+## 🔗 Colab  
 
-Please note, to run the app on Colab, you will need an ngrok token. You can get one by signing up for free on [ngrok](https://ngrok.com/).
-This is because Colab does not allow exposing ports to the internet directly.
+To start the **Neural-Forge-Ai UI** on **Google Colab**, click the following link:  
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/v-punithkumar/Neural-Forge-Ai/blob/main/colabs/NeuralForge.ipynb)  
 
-## Locally
+> **⚠ Note:**  
+> - To run the app on **Colab**, you will need an **ngrok token**.  
+> - You can get a free token by signing up on **[ngrok](https://ngrok.com/)**.  
+> - This is required because Colab **does not allow** exposing ports directly to the internet.  
 
-To run the autotrain app locally, install autotrain-advanced python package:
+---
+
+## 🖥️ Running Locally  
+
+To run **Neural-Forge-Ai** locally, install the package using **pip**:  
 
 ```bash
-$ pip install autotrain-advanced
-```
+$ pip install neural-forge-ai
+Then, start the Neural-Forge-Ai UI using the following command:
 
-and then run the following command:
-
-```bash
+bash
+Copy
+Edit
 $ export HF_TOKEN=your_hugging_face_write_token
-$ autotrain app --host 127.0.0.1 --port 8000
-```
+$ neural-forge app --host 127.0.0.1 --port 8000
+This will start the UI at: http://127.0.0.1:8000
 
-This will start the app on `http://127.0.0.1:8000`.
+📌 Recommended Installation (Conda)
+Since Neural-Forge-Ai does not install pytorch, torchaudio, torchvision, or other large dependencies by default,
+we strongly recommend using a Conda environment for best compatibility.
 
-AutoTrain doesn't install pytorch, torchaudio, torchvision, or any other dependencies. You will need to install them separately.
-It is thus recommended to use conda environment:
+bash
+Copy
+Edit
+$ conda create -n neuralforge python=3.10
+$ conda activate neuralforge
 
-
-```bash
-$ conda create -n autotrain python=3.10
-$ conda activate autotrain
-
-$ pip install autotrain-advanced
+$ pip install neural-forge-ai
 
 $ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 $ conda install -c "nvidia/label/cuda-12.1.0" cuda-nvcc
@@ -59,7 +67,8 @@ $ pip install flash-attn --no-build-isolation
 $ pip install deepspeed
 
 $ export HF_TOKEN=your_hugging_face_write_token
-$ autotrain app --host 127.0.0.1 --port 8000
-```
+$ neural-forge app --host 127.0.0.1 --port 8000
+❓ Troubleshooting
+If you face any issues, please report them on our GitHub Issues.
 
-In case of any issues, please report on the [GitHub issues](https://github.com/huggingface/autotrain-advanced/).
+🚀 Start training today with Neural-Forge-Ai! 🚀

@@ -1,6 +1,6 @@
 task: sentence-transformers:triplet
 base_model: microsoft/mpnet-base
-project_name: autotrain-st-triplet
+project_name: neural-forge-ai-st-triplet
 log: tensorboard
 backend: local
 

@@ -1,6 +1,6 @@
 task: vlm:vqa
 base_model: google/paligemma-3b-pt-224
-project_name: autotrain-paligemma-finetuned-vqa
+project_name: neural-forge-ai-paligemma-finetuned-vqa
 log: tensorboard
 backend: local
 

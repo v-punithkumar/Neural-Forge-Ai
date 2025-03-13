@@ -1,6 +1,6 @@
 task: llm-sft
 base_model: HuggingFaceTB/SmolLM2-1.7B-Instruct
-project_name: autotrain-smollm2-finetune
+project_name: neural-forge-ai-smollm2-finetune
 log: tensorboard
 backend: local
 

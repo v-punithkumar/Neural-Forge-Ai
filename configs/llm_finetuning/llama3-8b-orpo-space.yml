@@ -1,6 +1,6 @@
 task: llm-orpo
 base_model: meta-llama/Meta-Llama-3-8B-Instruct
-project_name: autotrain-llama3-8b-orpo-t1
+project_name: neural-forge-ai-llama3-8b-orpo-t1
 log: tensorboard
 backend: spaces-a10g-largex4
 

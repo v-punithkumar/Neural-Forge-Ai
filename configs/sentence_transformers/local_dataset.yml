@@ -1,6 +1,6 @@
 task: sentence-transformers:pair_score
 base_model: microsoft/mpnet-base
-project_name: autotrain-st-pair-score-local-dataset
+project_name: neural-forge-ai-st-pair-score-local-dataset
 log: tensorboard
 backend: local
 

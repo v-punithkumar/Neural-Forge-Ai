@@ -1,6 +1,6 @@
 task: llm-sft
 base_model: HuggingFaceTB/SmolLM2-135M-Instruct
-project_name: autotrain-smollm2-135m-finetune-guanaco
+project_name: neural-forge-ai-smollm2-135m-finetune-guanaco
 log: tensorboard
 backend: local
 

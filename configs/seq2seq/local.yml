@@ -1,6 +1,6 @@
 task: seq2seq
 base_model: google/flan-t5-base
-project_name: autotrain-seq2seq-local
+project_name: neural-forge-ai-seq2seq-local
 log: tensorboard
 backend: local
 

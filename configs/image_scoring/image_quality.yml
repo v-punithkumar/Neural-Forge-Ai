@@ -1,6 +1,6 @@
 task: image_regression
 base_model: microsoft/resnet-50
-project_name: autotrain-img-quality-resnet50
+project_name: neural-forge-ai-img-quality-resnet50
 log: tensorboard
 backend: local
 

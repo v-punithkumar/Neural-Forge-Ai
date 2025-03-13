@@ -1,6 +1,6 @@
 task: llm-orpo
 base_model: HuggingFaceTB/SmolLM2-1.7B-Instruct
-project_name: autotrain-smallm2-orpo
+project_name: neural-forge-ai-smallm2-orpo
 log: tensorboard
 backend: local
 

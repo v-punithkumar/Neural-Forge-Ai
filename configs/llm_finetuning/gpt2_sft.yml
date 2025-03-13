@@ -1,6 +1,6 @@
 task: llm-sft
 base_model: openai-community/gpt2
-project_name: autotrain-gpt2-finetuned-guanaco
+project_name: neural-forge-ai-gpt2-finetuned-guanaco
 log: tensorboard
 backend: local
 
