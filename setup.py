@@ -63,7 +63,7 @@ setup(
     packages=find_packages("src"),
     extras_require=EXTRAS_REQUIRE,
     install_requires=INSTALL_REQUIRES,
-    entry_points={"console_scripts": ["neuralforge=neural_forge_ai.cli.main:main"]},
+    entry_points={"console_scripts": ["neuralforge=neural_forge_ai.cli.neural_forge_ai:main"]},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",

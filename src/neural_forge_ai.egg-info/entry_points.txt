@@ -1,0 +1,2 @@
+[console_scripts]
+neuralforge = neural_forge_ai.cli.neural_forge_ai:main

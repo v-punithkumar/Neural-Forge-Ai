@@ -1,0 +1,423 @@
+Metadata-Version: 2.1
+Name: neural-forge-ai
+Version: 1.0.0.dev0
+Home-page: https://github.com/v-punithkumar/Neural-Forge-Ai
+Download-URL: https://github.com/v-punithkumar/Neural-Forge-Ai/tags
+Author: V Punith Kumar
+Author-email: punithkumar779@gmail.com
+License: Apache 2.0
+Keywords: machine-learning ai neural-forge deep-learning
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: albumentations==1.4.23
+Requires-Dist: datasets[vision]~=3.2.0
+Requires-Dist: evaluate==0.4.3
+Requires-Dist: ipadic==1.0.0
+Requires-Dist: jiwer==3.0.5
+Requires-Dist: joblib==1.4.2
+Requires-Dist: loguru==0.7.3
+Requires-Dist: pandas==2.2.3
+Requires-Dist: nltk==3.9.1
+Requires-Dist: optuna==4.1.0
+Requires-Dist: Pillow==11.0.0
+Requires-Dist: sacremoses==0.1.1
+Requires-Dist: scikit-learn==1.6.0
+Requires-Dist: sentencepiece==0.2.0
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: werkzeug==3.1.3
+Requires-Dist: xgboost==2.1.3
+Requires-Dist: huggingface_hub==0.27.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: einops==0.8.0
+Requires-Dist: packaging==24.2
+Requires-Dist: cryptography==44.0.0
+Requires-Dist: nvitop==1.3.2
+Requires-Dist: tensorboard==2.18.0
+Requires-Dist: peft==0.14.0
+Requires-Dist: trl==0.13.0
+Requires-Dist: tiktoken==0.8.0
+Requires-Dist: transformers==4.48.0
+Requires-Dist: accelerate==1.2.1
+Requires-Dist: bitsandbytes==0.45.0; sys_platform == "linux"
+Requires-Dist: rouge_score==0.1.2
+Requires-Dist: py7zr==0.22.0
+Requires-Dist: fastapi==0.115.6
+Requires-Dist: uvicorn==0.34.0
+Requires-Dist: python-multipart==0.0.20
+Requires-Dist: pydantic==2.10.4
+Requires-Dist: hf-transfer
+Requires-Dist: pyngrok==7.2.1
+Requires-Dist: authlib==1.4.0
+Requires-Dist: itsdangerous==2.2.0
+Requires-Dist: seqeval==1.2.2
+Requires-Dist: httpx==0.28.1
+Requires-Dist: pyyaml==6.0.2
+Requires-Dist: timm==1.0.12
+Requires-Dist: torchmetrics==1.6.0
+Requires-Dist: pycocotools==2.0.8
+Requires-Dist: sentence-transformers==3.3.1
+Provides-Extra: base
+Requires-Dist: albumentations==1.4.23; extra == "base"
+Requires-Dist: datasets[vision]~=3.2.0; extra == "base"
+Requires-Dist: evaluate==0.4.3; extra == "base"
+Requires-Dist: ipadic==1.0.0; extra == "base"
+Requires-Dist: jiwer==3.0.5; extra == "base"
+Requires-Dist: joblib==1.4.2; extra == "base"
+Requires-Dist: loguru==0.7.3; extra == "base"
+Requires-Dist: pandas==2.2.3; extra == "base"
+Requires-Dist: nltk==3.9.1; extra == "base"
+Requires-Dist: optuna==4.1.0; extra == "base"
+Requires-Dist: Pillow==11.0.0; extra == "base"
+Requires-Dist: sacremoses==0.1.1; extra == "base"
+Requires-Dist: scikit-learn==1.6.0; extra == "base"
+Requires-Dist: sentencepiece==0.2.0; extra == "base"
+Requires-Dist: tqdm==4.67.1; extra == "base"
+Requires-Dist: werkzeug==3.1.3; extra == "base"
+Requires-Dist: xgboost==2.1.3; extra == "base"
+Requires-Dist: huggingface_hub==0.27.0; extra == "base"
+Requires-Dist: requests==2.32.3; extra == "base"
+Requires-Dist: einops==0.8.0; extra == "base"
+Requires-Dist: packaging==24.2; extra == "base"
+Requires-Dist: cryptography==44.0.0; extra == "base"
+Requires-Dist: nvitop==1.3.2; extra == "base"
+Requires-Dist: tensorboard==2.18.0; extra == "base"
+Requires-Dist: peft==0.14.0; extra == "base"
+Requires-Dist: trl==0.13.0; extra == "base"
+Requires-Dist: tiktoken==0.8.0; extra == "base"
+Requires-Dist: transformers==4.48.0; extra == "base"
+Requires-Dist: accelerate==1.2.1; extra == "base"
+Requires-Dist: bitsandbytes==0.45.0; sys_platform == "linux" and extra == "base"
+Requires-Dist: rouge_score==0.1.2; extra == "base"
+Requires-Dist: py7zr==0.22.0; extra == "base"
+Requires-Dist: fastapi==0.115.6; extra == "base"
+Requires-Dist: uvicorn==0.34.0; extra == "base"
+Requires-Dist: python-multipart==0.0.20; extra == "base"
+Requires-Dist: pydantic==2.10.4; extra == "base"
+Requires-Dist: hf-transfer; extra == "base"
+Requires-Dist: pyngrok==7.2.1; extra == "base"
+Requires-Dist: authlib==1.4.0; extra == "base"
+Requires-Dist: itsdangerous==2.2.0; extra == "base"
+Requires-Dist: seqeval==1.2.2; extra == "base"
+Requires-Dist: httpx==0.28.1; extra == "base"
+Requires-Dist: pyyaml==6.0.2; extra == "base"
+Requires-Dist: timm==1.0.12; extra == "base"
+Requires-Dist: torchmetrics==1.6.0; extra == "base"
+Requires-Dist: pycocotools==2.0.8; extra == "base"
+Requires-Dist: sentence-transformers==3.3.1; extra == "base"
+Provides-Extra: dev
+Requires-Dist: albumentations==1.4.23; extra == "dev"
+Requires-Dist: datasets[vision]~=3.2.0; extra == "dev"
+Requires-Dist: evaluate==0.4.3; extra == "dev"
+Requires-Dist: ipadic==1.0.0; extra == "dev"
+Requires-Dist: jiwer==3.0.5; extra == "dev"
+Requires-Dist: joblib==1.4.2; extra == "dev"
+Requires-Dist: loguru==0.7.3; extra == "dev"
+Requires-Dist: pandas==2.2.3; extra == "dev"
+Requires-Dist: nltk==3.9.1; extra == "dev"
+Requires-Dist: optuna==4.1.0; extra == "dev"
+Requires-Dist: Pillow==11.0.0; extra == "dev"
+Requires-Dist: sacremoses==0.1.1; extra == "dev"
+Requires-Dist: scikit-learn==1.6.0; extra == "dev"
+Requires-Dist: sentencepiece==0.2.0; extra == "dev"
+Requires-Dist: tqdm==4.67.1; extra == "dev"
+Requires-Dist: werkzeug==3.1.3; extra == "dev"
+Requires-Dist: xgboost==2.1.3; extra == "dev"
+Requires-Dist: huggingface_hub==0.27.0; extra == "dev"
+Requires-Dist: requests==2.32.3; extra == "dev"
+Requires-Dist: einops==0.8.0; extra == "dev"
+Requires-Dist: packaging==24.2; extra == "dev"
+Requires-Dist: cryptography==44.0.0; extra == "dev"
+Requires-Dist: nvitop==1.3.2; extra == "dev"
+Requires-Dist: tensorboard==2.18.0; extra == "dev"
+Requires-Dist: peft==0.14.0; extra == "dev"
+Requires-Dist: trl==0.13.0; extra == "dev"
+Requires-Dist: tiktoken==0.8.0; extra == "dev"
+Requires-Dist: transformers==4.48.0; extra == "dev"
+Requires-Dist: accelerate==1.2.1; extra == "dev"
+Requires-Dist: bitsandbytes==0.45.0; sys_platform == "linux" and extra == "dev"
+Requires-Dist: rouge_score==0.1.2; extra == "dev"
+Requires-Dist: py7zr==0.22.0; extra == "dev"
+Requires-Dist: fastapi==0.115.6; extra == "dev"
+Requires-Dist: uvicorn==0.34.0; extra == "dev"
+Requires-Dist: python-multipart==0.0.20; extra == "dev"
+Requires-Dist: pydantic==2.10.4; extra == "dev"
+Requires-Dist: hf-transfer; extra == "dev"
+Requires-Dist: pyngrok==7.2.1; extra == "dev"
+Requires-Dist: authlib==1.4.0; extra == "dev"
+Requires-Dist: itsdangerous==2.2.0; extra == "dev"
+Requires-Dist: seqeval==1.2.2; extra == "dev"
+Requires-Dist: httpx==0.28.1; extra == "dev"
+Requires-Dist: pyyaml==6.0.2; extra == "dev"
+Requires-Dist: timm==1.0.12; extra == "dev"
+Requires-Dist: torchmetrics==1.6.0; extra == "dev"
+Requires-Dist: pycocotools==2.0.8; extra == "dev"
+Requires-Dist: sentence-transformers==3.3.1; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: flake8==3.7.9; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Provides-Extra: quality
+Requires-Dist: albumentations==1.4.23; extra == "quality"
+Requires-Dist: datasets[vision]~=3.2.0; extra == "quality"
+Requires-Dist: evaluate==0.4.3; extra == "quality"
+Requires-Dist: ipadic==1.0.0; extra == "quality"
+Requires-Dist: jiwer==3.0.5; extra == "quality"
+Requires-Dist: joblib==1.4.2; extra == "quality"
+Requires-Dist: loguru==0.7.3; extra == "quality"
+Requires-Dist: pandas==2.2.3; extra == "quality"
+Requires-Dist: nltk==3.9.1; extra == "quality"
+Requires-Dist: optuna==4.1.0; extra == "quality"
+Requires-Dist: Pillow==11.0.0; extra == "quality"
+Requires-Dist: sacremoses==0.1.1; extra == "quality"
+Requires-Dist: scikit-learn==1.6.0; extra == "quality"
+Requires-Dist: sentencepiece==0.2.0; extra == "quality"
+Requires-Dist: tqdm==4.67.1; extra == "quality"
+Requires-Dist: werkzeug==3.1.3; extra == "quality"
+Requires-Dist: xgboost==2.1.3; extra == "quality"
+Requires-Dist: huggingface_hub==0.27.0; extra == "quality"
+Requires-Dist: requests==2.32.3; extra == "quality"
+Requires-Dist: einops==0.8.0; extra == "quality"
+Requires-Dist: packaging==24.2; extra == "quality"
+Requires-Dist: cryptography==44.0.0; extra == "quality"
+Requires-Dist: nvitop==1.3.2; extra == "quality"
+Requires-Dist: tensorboard==2.18.0; extra == "quality"
+Requires-Dist: peft==0.14.0; extra == "quality"
+Requires-Dist: trl==0.13.0; extra == "quality"
+Requires-Dist: tiktoken==0.8.0; extra == "quality"
+Requires-Dist: transformers==4.48.0; extra == "quality"
+Requires-Dist: accelerate==1.2.1; extra == "quality"
+Requires-Dist: bitsandbytes==0.45.0; sys_platform == "linux" and extra == "quality"
+Requires-Dist: rouge_score==0.1.2; extra == "quality"
+Requires-Dist: py7zr==0.22.0; extra == "quality"
+Requires-Dist: fastapi==0.115.6; extra == "quality"
+Requires-Dist: uvicorn==0.34.0; extra == "quality"
+Requires-Dist: python-multipart==0.0.20; extra == "quality"
+Requires-Dist: pydantic==2.10.4; extra == "quality"
+Requires-Dist: hf-transfer; extra == "quality"
+Requires-Dist: pyngrok==7.2.1; extra == "quality"
+Requires-Dist: authlib==1.4.0; extra == "quality"
+Requires-Dist: itsdangerous==2.2.0; extra == "quality"
+Requires-Dist: seqeval==1.2.2; extra == "quality"
+Requires-Dist: httpx==0.28.1; extra == "quality"
+Requires-Dist: pyyaml==6.0.2; extra == "quality"
+Requires-Dist: timm==1.0.12; extra == "quality"
+Requires-Dist: torchmetrics==1.6.0; extra == "quality"
+Requires-Dist: pycocotools==2.0.8; extra == "quality"
+Requires-Dist: sentence-transformers==3.3.1; extra == "quality"
+Requires-Dist: black; extra == "quality"
+Requires-Dist: isort; extra == "quality"
+Requires-Dist: flake8==3.7.9; extra == "quality"
+Provides-Extra: docs
+Requires-Dist: albumentations==1.4.23; extra == "docs"
+Requires-Dist: datasets[vision]~=3.2.0; extra == "docs"
+Requires-Dist: evaluate==0.4.3; extra == "docs"
+Requires-Dist: ipadic==1.0.0; extra == "docs"
+Requires-Dist: jiwer==3.0.5; extra == "docs"
+Requires-Dist: joblib==1.4.2; extra == "docs"
+Requires-Dist: loguru==0.7.3; extra == "docs"
+Requires-Dist: pandas==2.2.3; extra == "docs"
+Requires-Dist: nltk==3.9.1; extra == "docs"
+Requires-Dist: optuna==4.1.0; extra == "docs"
+Requires-Dist: Pillow==11.0.0; extra == "docs"
+Requires-Dist: sacremoses==0.1.1; extra == "docs"
+Requires-Dist: scikit-learn==1.6.0; extra == "docs"
+Requires-Dist: sentencepiece==0.2.0; extra == "docs"
+Requires-Dist: tqdm==4.67.1; extra == "docs"
+Requires-Dist: werkzeug==3.1.3; extra == "docs"
+Requires-Dist: xgboost==2.1.3; extra == "docs"
+Requires-Dist: huggingface_hub==0.27.0; extra == "docs"
+Requires-Dist: requests==2.32.3; extra == "docs"
+Requires-Dist: einops==0.8.0; extra == "docs"
+Requires-Dist: packaging==24.2; extra == "docs"
+Requires-Dist: cryptography==44.0.0; extra == "docs"
+Requires-Dist: nvitop==1.3.2; extra == "docs"
+Requires-Dist: tensorboard==2.18.0; extra == "docs"
+Requires-Dist: peft==0.14.0; extra == "docs"
+Requires-Dist: trl==0.13.0; extra == "docs"
+Requires-Dist: tiktoken==0.8.0; extra == "docs"
+Requires-Dist: transformers==4.48.0; extra == "docs"
+Requires-Dist: accelerate==1.2.1; extra == "docs"
+Requires-Dist: bitsandbytes==0.45.0; sys_platform == "linux" and extra == "docs"
+Requires-Dist: rouge_score==0.1.2; extra == "docs"
+Requires-Dist: py7zr==0.22.0; extra == "docs"
+Requires-Dist: fastapi==0.115.6; extra == "docs"
+Requires-Dist: uvicorn==0.34.0; extra == "docs"
+Requires-Dist: python-multipart==0.0.20; extra == "docs"
+Requires-Dist: pydantic==2.10.4; extra == "docs"
+Requires-Dist: hf-transfer; extra == "docs"
+Requires-Dist: pyngrok==7.2.1; extra == "docs"
+Requires-Dist: authlib==1.4.0; extra == "docs"
+Requires-Dist: itsdangerous==2.2.0; extra == "docs"
+Requires-Dist: seqeval==1.2.2; extra == "docs"
+Requires-Dist: httpx==0.28.1; extra == "docs"
+Requires-Dist: pyyaml==6.0.2; extra == "docs"
+Requires-Dist: timm==1.0.12; extra == "docs"
+Requires-Dist: torchmetrics==1.6.0; extra == "docs"
+Requires-Dist: pycocotools==2.0.8; extra == "docs"
+Requires-Dist: sentence-transformers==3.3.1; extra == "docs"
+Requires-Dist: recommonmark; extra == "docs"
+Requires-Dist: sphinx==3.1.2; extra == "docs"
+Requires-Dist: sphinx-markdown-tables; extra == "docs"
+Requires-Dist: sphinx-rtd-theme==0.4.3; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Provides-Extra: client
+Requires-Dist: requests; extra == "client"
+Requires-Dist: loguru; extra == "client"
+
+# 🤖 Neural-Forge-Ai
+
+Neural-Forge-Ai is a cutting-edge AI model training and deployment framework designed for efficient and scalable fine-tuning of state-of-the-art machine learning models. This platform provides a seamless, no-code solution for AI model training, ensuring flexibility in various tasks such as fine-tuning, text classification, regression, and more.
+
+---
+
+## 🔧 Features
+
+- **No-Code Training**: Train machine learning models effortlessly without deep technical expertise.
+- **Multi-Task Support**: Fine-tune models for LLM training, text classification, token classification, and more.
+- **Optimized Infrastructure**: Supports both local and cloud-based training.
+- **Seamless Deployment**: Easily deploy trained models to Hugging Face Spaces or cloud environments.
+- **Custom Configuration Support**: Use YAML-based configurations to fine-tune models efficiently.
+
+---
+
+## 📈 Supported Tasks
+
+| Task | Status | Python Notebook | Example Configs |
+| --- | --- | --- | --- |
+| LLM Fine-Tuning | ✅ | [Colab Notebook](https://colab.research.google.com/) | [Example YAML](configs/llm_finetune.yaml) |
+| Text Classification | ✅ | [Colab Notebook](https://colab.research.google.com/) | [Example YAML](configs/text_classification.yaml) |
+| Text Regression | ✅ | [Colab Notebook](https://colab.research.google.com/) | [Example YAML](configs/text_regression.yaml) |
+| Token Classification | ✅ | Coming Soon | [Example YAML](configs/token_classification.yaml) |
+| Seq2Seq | ✅ | Coming Soon | [Example YAML](configs/seq2seq.yaml) |
+| Image Classification | ✅ | Coming Soon | [Example YAML](configs/image_classification.yaml) |
+
+---
+
+## 🌐 Running UI on Cloud or Local
+
+- **Deploy on Hugging Face Spaces**: [![Deploy on Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/deploy-on-spaces-md.svg)](https://huggingface.co/login?next=%2Fspaces%2Fneural-forge-ai%2Fneural-forge-ui%3Fduplicate%3Dtrue)
+
+- **Run on Colab via ngrok**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
+
+---
+
+## 🔄 Local Installation
+
+You can install **Neural-Forge-Ai** via pip. Ensure **Python >= 3.10** is installed.
+
+```sh
+pip install neural-forge-ai
+```
+
+### **Dependencies**
+Ensure `git-lfs` and PyTorch are installed:
+
+```sh
+conda create -n neuralforge python=3.10
+conda activate neuralforge
+pip install neural-forge-ai
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install -c "nvidia/label/cuda-12.1.0" cuda-nvcc
+```
+
+Once installed, start the application using:
+
+```sh
+neuralforge app --port 8080 --host 127.0.0.1
+```
+
+To use a config file for training:
+
+```sh
+neuralforge --config <path_to_config_file>
+```
+
+---
+
+## 🔖 Configuration Example
+
+Example YAML for fine-tuning:
+
+```yaml
+task: llm-sft
+base_model: HuggingFaceTB/SmolLM2-1.7B-Instruct
+project_name: neural-forge-finetune
+log: tensorboard
+backend: local
+
+data:
+  path: dataset/path
+  train_split: train
+  valid_split: null
+  chat_template: tokenizer
+  column_mapping:
+    text_column: messages
+
+params:
+  block_size: 2048
+  model_max_length: 4096
+  epochs: 2
+  batch_size: 1
+  lr: 1e-5
+  peft: true
+  quantization: int4
+  target_modules: all-linear
+  padding: right
+  optimizer: paged_adamw_8bit
+  scheduler: linear
+  gradient_accumulation: 8
+  mixed_precision: bf16
+  merge_adapter: true
+
+hub:
+  username: ${HF_USERNAME}
+  token: ${HF_TOKEN}
+  push_to_hub: true
+```
+
+To fine-tune a model using the above config:
+
+```sh
+export HF_USERNAME=<your_hugging_face_username>
+export HF_TOKEN=<your_hugging_face_write_token>
+neuralforge --config <path_to_config_file>
+```
+
+---
+
+## 📜 Documentation
+
+For detailed documentation, visit [Neural-Forge-Ai Docs](https://your-docs-link.com)
+
+---
+
+## 🌟 Citation
+
+If you use **Neural-Forge-Ai**, please cite:
+
+```
+@inproceedings{punith-2025-neuralforgeai,
+    title = "Neural-Forge-Ai: AI Model Training Framework",
+    author = "V Punith Kumar",
+    year = "2025",
+    url = "https://github.com/v-punithkumar/Neural-Forge-Ai",
+}
+```
+
+---
+
+🎉 **Contributions & Issues**
+- Submit issues & feature requests on GitHub.
+- PRs are welcome! Read our contributing guidelines.
+
+Happy Model Training! 🚀

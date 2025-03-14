@@ -1,0 +1,9 @@
+INFO     | 2025-03-14 18:04:44 | neural_forge_ai.app.ui_routes:<module>:31 - Starting neural_forge_ai...
+INFO     | 2025-03-14 18:04:49 | neural_forge_ai.app.ui_routes:<module>:315 - neural_forge_ai started successfully
+INFO     | 2025-03-14 18:04:49 | neural_forge_ai.app.app:<module>:13 - Starting neural_forge_ai...
+INFO     | 2025-03-14 18:04:49 | neural_forge_ai.app.app:<module>:23 - neural_forge_ai version: 1.0.0.dev0
+INFO     | 2025-03-14 18:04:49 | neural_forge_ai.app.app:<module>:24 - neural_forge_ai started successfully
+INFO:     Started server process [20236]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:7860 (Press CTRL+C to quit)
